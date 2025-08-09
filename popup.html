@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PokerNow Analyzer</title>
+    <style>
+      body { font-family: Arial, sans-serif; min-width: 220px; padding: 16px; }
+      h2 { margin-top: 0; font-size: 18px; }
+      .color-option {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin: 0 6px 0 0;
+        border: 2px solid #ccc;
+        cursor: pointer;
+        vertical-align: middle;
+      }
+      .color-option.selected {
+        border: 3px solid #222;
+      }
+      #toggleOverlayBtn {
+        margin-bottom: 12px;
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 100%;
+        background: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>PokerNow Analyzer</h2>
+    <button id="toggleOverlayBtn">Show/Hide Overlay</button>
+    <div style="margin-top: 10px;">
+      <div style="margin-bottom: 6px;">Primary Color:</div>
+      <div id="colorOptions">
+        <span class="color-option" data-color="#4CAF50" title="Lime Green" style="background:#4CAF50;"></span>
+        <span class="color-option" data-color="#2196F3" title="Blue" style="background:#2196F3;"></span>
+        <span class="color-option" data-color="#9C27B0" title="Purple" style="background:#9C27B0;"></span>
+        <span class="color-option" data-color="#FF9800" title="Orange" style="background:#FF9800;"></span>
+        <span class="color-option" data-color="#607D8B" title="Gray" style="background:#607D8B;"></span>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html> 

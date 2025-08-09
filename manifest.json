@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "PokerNow Analyzer",
+  "version": "1.18",
+  "description": "Analyzes your PokerNow hand and suggests the best move.",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": [
+    "https://www.pokernow.club/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.pokernow.club/*"],
+      "js": ["hand-evaluator.js", "poker-parser.js", "ui-overlay.js", "content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
